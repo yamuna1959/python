@@ -1,0 +1,19 @@
+fr=open("Demo.txt","r")
+
+wordcount={}
+
+for word in fr.read().split():
+
+    if word not in wordcount:
+
+        wordcount[word]=1
+
+    else:
+
+        wordcount[word]+=1
+
+for k,v in wordcount.items():
+
+    print(k,v)
+
+fr.close()
